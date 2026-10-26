@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><title>STYLE MARKET</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<style>
+:root{color-scheme:dark;--bg:#09090c;--cd:#17171d;--c2:#22222b;--tx:#f4f4f6;--mu:#8d8d99;--gr:#2fd66b;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--tx);font:15px -apple-system,system-ui,Roboto,sans-serif;overflow:hidden}
+#top{display:flex;align-items:center;gap:10px;padding:10px 14px}
+.av{width:38px;height:38px;border-radius:12px;background:linear-gradient(135deg,#a855f7,#3b82f6);display:grid;place-items:center;font-weight:800}
+.xp{flex:1}.xp i{display:block;height:6px;border-radius:3px;background:#2a2a33;margin-top:5px;overflow:hidden}.xp i b{display:block;height:100%;background:var(--gr)}
+.bal{text-align:right;font-weight:800;font-size:17px}.bal small{display:block;color:var(--mu);font-weight:400;font-size:11px}
+#m{height:calc(100% - 66px - 80px - env(safe-area-inset-bottom,0px));overflow:auto;padding:0 14px 20px}
+nav{position:fixed;left:10px;right:10px;bottom:calc(8px + env(safe-area-inset-bottom,0px));background:#14141a;border-radius:24px;display:flex;padding:6px;box-shadow:0 6px 24px #000}
+nav button{flex:1;background:none;border:0;color:var(--mu);padding:8px 0;border-radius:18px;font-size:11px;display:flex;flex-direction:column;align-items:center;gap:3px}
+nav button.on{background:#262630;color:var(--gr)}nav svg{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.cd{background:var(--cd);border-radius:18px;padding:14px;margin-bottom:10px}
+.ban{background:linear-gradient(135deg,#3a2a05,#1a1206);border:1px solid #6b4d10;border-radius:16px;padding:12px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center;gap:8px}
+button.b{background:var(--gr);color:#04140a;border:0;border-radius:16px;padding:15px;font-weight:800;font-size:16px;width:100%}
+button.s{background:var(--c2);color:var(--tx);border:0;border-radius:12px;padding:9px 14px;font-weight:700;font-size:14px}
+button.b:disabled,button.s:disabled{opacity:.4}
+.ch{display:flex;gap:6px;overflow:auto;padding-bottom:8px;margin-bottom:4px}.ch button{flex:none;background:var(--c2);color:var(--tx);border:0;border-radius:20px;padding:8px 13px;font-size:13px}.ch button.on{background:#fff;color:#000}
+input{width:100%;background:var(--cd);border:0;border-radius:14px;padding:12px 14px;color:var(--tx);font-size:16px;margin-bottom:8px}
+.gr{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ic{background:var(--cd);border:1px solid var(--rc);background:linear-gradient(160deg,color-mix(in srgb,var(--rc) 22%,#17171d),#17171d 65%);border:1px solid color-mix(in srgb,var(--rc) 55%,transparent);border-radius:18px;padding:10px;position:relative;box-shadow:0 0 14px color-mix(in srgb,var(--rc) 18%,transparent)}
+.ic.m5{animation:gl 2s infinite alternate}@keyframes gl{to{box-shadow:0 0 26px var(--rc)}}
+.im{aspect-ratio:1;display:block}.im svg{width:100%;height:100%}
+.ic b{display:block;font-size:13px;line-height:1.2}.ic small{color:var(--mu);font-size:11px}
+.rt{font-size:11px;font-weight:700;color:var(--rc)}.pr{font-weight:800;margin-top:4px}
+.ic.sel{outline:3px solid var(--gr)}
+.rw{display:flex;align-items:center;gap:10px;background:var(--cd);border-radius:16px;padding:8px;margin-bottom:8px;position:relative;border-left:4px solid var(--rc)}
+.rw .im{width:60px;flex:none}.rw div.t{flex:1;min-width:0}.rw b{font-size:14px;display:block}
+.box{height:170px;display:grid;place-items:center;margin:6px 0;position:relative}
+.cr{position:relative;width:120px;height:110px;animation:fl 2.2s ease-in-out infinite alternate}@keyframes fl{to{transform:translateY(-6px)}}
+.cr u{display:block;position:absolute;text-decoration:none}
+.bd{background:var(--bc);bottom:0;left:0;width:120px;height:72px;border-radius:10px 10px 16px 16px;background:linear-gradient(160deg,color-mix(in srgb,var(--bc) 70%,#fff),color-mix(in srgb,var(--bc) 40%,#000));box-shadow:0 0 36px color-mix(in srgb,var(--bc) 55%,transparent)}
+.bd:after{content:"";position:absolute;left:50%;top:0;width:18px;height:100%;margin-left:-9px;background:#0003}
+.lid{background:var(--bc);top:8px;left:-6px;width:132px;height:36px;border-radius:12px;background:linear-gradient(160deg,color-mix(in srgb,var(--bc) 85%,#fff),color-mix(in srgb,var(--bc) 50%,#000));transform-origin:left bottom;z-index:2}
+.gl{left:10px;right:10px;top:34px;height:20px;border-radius:50%;background:#fff;filter:blur(14px);opacity:0}
+.rays{background:repeating-conic-gradient(var(--bc) 0 8deg,transparent 8deg 24deg);left:50%;top:44px;width:260px;height:260px;margin:-130px 0 0 -130px;background:repeating-conic-gradient(color-mix(in srgb,var(--bc) 80%,#fff) 0 8deg,transparent 8deg 24deg);border-radius:50%;opacity:0;-webkit-mask:radial-gradient(circle,#000 5%,transparent 68%);mask:radial-gradient(circle,#000 5%,transparent 68%)}
+.box.go .cr{animation:shk .7s}
+.box.go .lid{animation:lid 1.2s .7s forwards}
+.box.go .gl{animation:glw 1.2s .7s forwards}
+.box.go .rays{animation:ry 1.2s .7s forwards}
+@keyframes shk{0%,100%{transform:none}15%{transform:translateX(-8px) rotate(-4deg)}30%{transform:translateX(8px) rotate(4deg)}45%{transform:translateX(-10px) rotate(-5deg)}60%{transform:translateX(10px) rotate(5deg)}80%{transform:translateX(-6px)}}
+@keyframes lid{to{transform:translateY(-80px) rotate(-38deg);opacity:0}}
+@keyframes glw{0%{opacity:0}30%{opacity:1}100%{opacity:.9;transform:scale(2.5,6)}}
+@keyframes ry{0%{opacity:0;transform:scale(.3)}40%{opacity:.95}100%{opacity:0;transform:scale(1.4) rotate(40deg)}}
+.box i{width:110px;height:110px;border-radius:26px;background:linear-gradient(135deg,#f5b301,#ff7a1a);box-shadow:0 0 40px #f5b30160;display:grid;place-items:center;font-style:normal;font-size:44px;font-weight:900;color:#3a2200}
+.box.go i{animation:sh .7s}@keyframes sh{20%{transform:rotate(-14deg) scale(1.1)}40%{transform:rotate(14deg) scale(1.15)}60%{transform:rotate(-10deg) scale(1.2)}100%{transform:scale(.8);opacity:.3}}
+#ov{position:fixed;inset:0;background:#000b;display:none;align-items:flex-end;z-index:9}#ov.on{display:flex}
+.sh{background:#141419;width:100%;max-height:88%;overflow:auto;border-radius:26px 26px 0 0;padding:16px 14px calc(16px + env(safe-area-inset-bottom,0px));animation:up .25s}@keyframes up{from{transform:translateY(60%)}}
+.pop{animation:pp .5s both}@keyframes pp{from{transform:scale(.4);opacity:0}}
+h3{margin:14px 2px 8px;font-size:12px;color:var(--mu);letter-spacing:.06em;text-transform:uppercase}
+.mu{color:var(--mu);font-size:13px}.row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+#ts{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);background:#fff;color:#000;padding:10px 16px;border-radius:14px;font-weight:700;z-index:20;display:none;max-width:90%;pointer-events:none}
+.pb{height:8px;border-radius:4px;background:#2a2a33;overflow:hidden}.pb b{display:block;height:100%;background:var(--gr)}
+</style></head><body>
+<div id="top"></div><div id="m"></div>
+<nav id="nv"></nav><div id="ov"><div class="sh" id="sh"></div></div><div id="ts"></div>
+<script>
+const R=[["Обычный","#9aa0a6",55],["Необычный","#34c759",25],["Редкий","#3b82f6",12],["Эпический","#a855f7",5.5],["Легендарный","#f5b301",2],["Мифический","#ff3b5c",.5]];
+const CT={sneaker:"Кроссовки",hoodie:"Худи",tee:"Футболки",jacket:"Куртки",jeans:"Джинсы",bag:"Сумки",cap:"Кепки",watch:"Часы"};
+// name, brand, cat, rarity, base price, c1, c2, c3, variant
+const I=[
+["Basic Tee","NVRST","tee",0,1500,"#cfd3d8","#8e949c","#222",0],
+["Daily Cap","DRIPZONE","cap",0,1800,"#ff9f43","#d35400","#2b1a0a",0],
+["Straight Jeans","BLVCKFORM","jeans",0,3200,"#3d5a80","#1e2f4a","#d8c9a0",0],
+["Street Low","NVRST","sneaker",0,5500,"#e8e8ea","#9a9aa3","#2a2a2a",0],
+["Cloud Hoodie","DRIPZONE","hoodie",1,6500,"#7ec8e3","#3b82a8","#1a3a4a",0],
+["Track Jacket","AERONIX","jacket",1,8500,"#2ecc71","#117a3e","#0b2f19",0],
+["Trail Pack","NORTHLINE","bag",1,7000,"#c2813b","#7a4a18","#2b1b0a",0],
+["Graphic Tee","DRIPZONE","tee",1,3800,"#f1c40f","#b7950b","#d63031",1],
+["Pulse Runner","AERONIX","sneaker",2,14000,"#3b82f6","#1d4ed8","#f4f4f6",1],
+["Raw Denim","BLVCKFORM","jeans",2,12000,"#1b1f2b","#0b0d14","#8a8f9c",1],
+["Storm Parka","NORTHLINE","jacket",2,24000,"#e67e22","#a04000","#2b1400",1],
+["Apex Runner","VELTRIX","sneaker",3,29000,"#a855f7","#6d28d9","#17082e",2],
+["Studio Tote","MONTEVO","bag",3,38000,"#111","#333","#d4af37",0],
+["Noir Coat","MONTEVO","jacket",4,120000,"#15151a","#050507","#d4af37",1],
+["Chrono Gold","MONTEVO","watch",4,180000,"#f5d061","#b8860b","#d4af37",0],
+["Genesis 1","RARESTEP","sneaker",5,480000,"#ff3b5c","#7a0a22","#ffd166",2],
+["Core Hoodie","BLVCKFORM","hoodie",2,13000,"#2b2b31","#101014","#8d8d99",1],
+["Logo Cap","NVRST","cap",1,2900,"#e11d48","#7f1d1d","#fff",1]];
+const S_={
+sneaker:(g,a,b,d,v)=>`<path d="M24 138Q22 98 52 94L80 88Q96 66 118 78L138 100Q176 104 186 130L186 150H26Z" fill="url(#${g})"/><rect x="20" y="146" width="170" height="16" rx="8" fill="${d}"/><path d="M88 90L112 104M96 82L120 96M80 98L104 112" stroke="${d}" stroke-width="4" stroke-linecap="round"/><path d="M40 134Q90 ${112+v*8} 170 128" stroke="#fff" stroke-opacity=".75" stroke-width="${4+v*2}" fill="none" stroke-linecap="round"/><path d="M140 104Q165 108 180 126" stroke="#fff" stroke-opacity=".3" stroke-width="3" fill="none"/>`,
+hoodie:(g,a,b,d,v)=>`<path d="M70 50Q100 70 130 50L170 70L190 140L162 148L152 110V170H48V110L38 148L10 140L30 70Z" fill="url(#${g})"/><path d="M70 50Q100 14 130 50Q100 80 70 50Z" fill="${b}"/><path d="M82 112H118L126 148H74Z" fill="#000" opacity=".22"/><path d="M92 66V92M108 66V92" stroke="${d}" stroke-width="3" stroke-linecap="round"/>${v?`<rect x="70" y="96" width="60" height="6" fill="${d}" opacity=".7"/>`:""}`,
+tee:(g,a,b,d,v)=>`<path d="M70 38Q100 56 130 38L174 58L190 96L158 106L150 92V164H50V92L42 106L10 96L26 58Z" fill="url(#${g})"/><path d="M70 38Q100 56 130 38" stroke="${b}" stroke-width="6" fill="none"/>${v?`<rect x="76" y="86" width="48" height="30" rx="4" fill="${d}"/>`:`<circle cx="100" cy="100" r="16" fill="${d}" opacity=".8"/>`}`,
+jacket:(g,a,b,d,v)=>`<path d="M64 36L100 50L136 36L176 60L190 150L160 156L154 100V168H46V100L40 156L10 150L24 60Z" fill="url(#${g})"/><path d="M100 50V168" stroke="${d}" stroke-width="4"/><path d="M64 36L100 82L136 36L120 30L100 50L80 30Z" fill="${b}"/><rect x="58" y="126" width="28" height="6" rx="3" fill="${d}"/><rect x="114" y="126" width="28" height="6" rx="3" fill="${d}"/>${v?`<path d="M20 90L34 88M180 90L166 88" stroke="${d}" stroke-width="5"/>`:""}`,
+jeans:(g,a,b,d,v)=>`<path d="M56 22H144L156 170H108L100 70L92 170H44Z" fill="url(#${g})"/><path d="M56 22H144V38H56Z" fill="${b}"/><path d="M100 38V70M70 54H88M112 54H130" stroke="${d}" stroke-width="3" fill="none"/>${v?`<path d="M62 120H92M110 120H140" stroke="${d}" stroke-width="3"/>`:""}`,
+bag:(g,a,b,d,v)=>`<path d="M70 70V50Q70 22 100 22Q130 22 130 50V70" stroke="${d}" stroke-width="8" fill="none"/><rect x="38" y="68" width="124" height="100" rx="14" fill="url(#${g})"/><rect x="38" y="68" width="124" height="32" rx="14" fill="${b}"/><circle cx="100" cy="116" r="8" fill="${d}"/>`,
+cap:(g,a,b,d,v)=>`<path d="M30 124Q30 52 100 52Q170 52 170 124Z" fill="url(#${g})"/><path d="M110 120Q190 112 196 134Q150 142 110 130Z" fill="${b}"/><circle cx="100" cy="50" r="6" fill="${d}"/><path d="M100 56V122M70 64Q62 92 66 124M130 64Q138 92 134 124" stroke="${d}" stroke-width="2" opacity=".5" fill="none"/>${v?`<rect x="84" y="86" width="32" height="14" rx="3" fill="${d}"/>`:""}`,
+watch:(g,a,b,d)=>`<rect x="82" y="8" width="36" height="184" rx="12" fill="${b}"/><circle cx="100" cy="100" r="50" fill="url(#${g})" stroke="${d}" stroke-width="6"/><circle cx="100" cy="100" r="37" fill="#0c0c10"/><path d="M100 100V74M100 100L118 110" stroke="#fff" stroke-width="4" stroke-linecap="round"/>${[0,1,2,3].map(k=>`<circle cx="${100+30*Math.sin(k*1.5708)}" cy="${100-30*Math.cos(k*1.5708)}" r="2.5" fill="${a}"/>`).join("")}`};
+const art=i=>{const [,,c,,,a,b,d,v]=I[i],g="g"+i;return `<svg viewBox="0 0 200 200"><defs><linearGradient id="${g}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${a}"/><stop offset="1" stop-color="${b}"/></linearGradient></defs><ellipse cx="100" cy="178" rx="70" ry="8" fill="#000" opacity=".4"/>${S_[c](g,a,b,d,v)}</svg>`};
+const $=s=>document.querySelector(s),fm=n=>Math.round(n).toLocaleString("ru-RU")+" ₽",CO=()=>boxCost(),fk=n=>n?Math.round(n/100)/10+"к":"—";
+// Telegram (без внешнего SDK: берём то, что инжектит клиент)
+const tg=window.Telegram&&window.Telegram.WebApp;let uid="local";
+try{if(tg){tg.ready();tg.expand();tg.setHeaderColor&&tg.setHeaderColor("#09090c");tg.setBackgroundColor&&tg.setBackgroundColor("#09090c");if(tg.initDataUnsafe&&tg.initDataUnsafe.user)uid=String(tg.initDataUnsafe.user.id)}
+else{const d=new URLSearchParams(location.hash.slice(1)).get("tgWebAppData");if(d){const u=JSON.parse(new URLSearchParams(d).get("user"));uid=String(u.id)}}}catch(e){}
+const K="sm_"+uid,today=new Date().toDateString();let S;
+try{S=JSON.parse(localStorage.getItem(K))}catch(e){}
+if(!S)S={bal:50000,xp:0,inv:[],opened:0,sold:0,bought:0,free:5,fd:today,daily:"",t:{o:0,s:0,b:0,c:{}},h:[],mk:null,bot:""};
+if(S.fd!==today){S.free=5;S.fd=today;S.t={o:0,s:0,b:0,c:{}}}
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const rnd=()=>Math.floor(Math.random()*1e9).toString(36)+Date.now().toString(36);
+const log=(m,d)=>{S.h.unshift({t:Date.now(),m,d});S.h=S.h.slice(0,60)};
+const toast=m=>{const t=$("#ts");t.textContent=m;t.style.display="block";clearTimeout(toast.k);toast.k=setTimeout(()=>t.style.display="none",2200)};
+let tab="play",P={cat:"all",min:0,n:1,busy:false,last:null},W={sort:"p",q:"",v:"g",sel:null},M={q:"",cat:"all",sort:"n",seg:"v"};
+const lv=()=>Math.floor(S.xp/200)+1;
+const val=u=>S.inv.reduce((a,x)=>a+x.val,0);
+function mkList(){S.mk=[];for(let k=0;k<12;k++){const i=Math.floor(Math.random()*I.length);S.mk.push({id:rnd(),i,p:Math.round(I[i][4]*(.95+Math.random()*.4)/10)*10,n:k})}save()}
+if(!S.mk)mkList();
+let AF="all",AV=null,AD=5;
+const BN=["Vlad","Mira","Kenji","Dasha","Alex","Nika"],step=c=>Math.max(100,Math.round(c*.05/10)*10),minBid=a=>a.bids.length?a.cur+step(a.cur):a.start;
+const tl=e=>{const s=Math.max(0,Math.round((e-Date.now())/1000)),h=Math.floor(s/3600),m=Math.floor(s%3600/60);return h?h+" ч "+m+" мин":m+":"+String(s%60).padStart(2,"0")};
+function tp(){$("#top").innerHTML=`<div class="av">${lv()}</div><div class="xp"><b>Ур. ${lv()}</b><i><b style="width:${S.xp%200/2}%"></b></i></div><div class="bal"><small>Баланс</small>${fm(S.bal)}</div><button class="s" aria-label="Настройки" onclick="A.set()" style="padding:9px 11px">⚙</button>`}
+function newAu(){const i=Math.floor(Math.random()*I.length),b=I[i][4],now=Date.now();return {id:rnd(),i,val:Math.round(b*(.9+Math.random()*.25)/10)*10,own:false,start:Math.round(b*.6/10)*10,cur:Math.round(b*.6/10)*10,lead:"",bids:[],end:now+(3+Math.random()*22)*6e4,nb:now+(5+Math.random()*25)*1e3,mx:Math.round(b*(1.05+Math.random()*.5)/10)*10,done:false}}
+if(!S.au){S.au=[];for(let k=0;k<6;k++)S.au.push(newAu())}
+function settle(){const now=Date.now();let ch=false;
+S.au.forEach(a=>{if(a.done)return;
+while(a.nb<=Math.min(now,a.end)){const mb=minBid(a);
+if(mb<=a.mx&&(a.lead!="me"||Math.random()<.85)&&(!a.lead||a.lead=="me"||Math.random()<.5)){const w=BN[Math.floor(Math.random()*BN.length)];
+if(a.lead=="me"){S.bal+=a.cur;log("Ставка перебита: "+I[a.i][1]+" "+I[a.i][0],a.cur);toast("Вашу ставку перебили")}
+a.cur=mb;a.lead=w;a.bids.push({w,p:mb,t:a.nb});if(a.end-a.nb<2e4)a.end=a.nb+2e4;ch=true}
+a.nb+=(6+Math.random()*30)*1e3}
+if(now>=a.end){a.done=true;ch=true;const n=I[a.i][1]+" "+I[a.i][0];
+if(a.own){if(a.bids.length){const g=Math.round(a.cur*.9);S.bal+=g;S.sold++;S.t.s++;S.xp+=15;log("Аукцион: продано "+n,g);toast("Лот продан: +"+fm(g))}
+else{S.inv.push({uid:a.uid,i:a.i,val:a.val,t:now});log("Аукцион без ставок: "+n,0);toast("Лот вернулся в гардероб")}}
+else if(a.lead=="me"){S.inv.push({uid:rnd(),i:a.i,val:a.val,t:now});S.bought++;S.t.b++;S.xp+=25;log("Выиграно на аукционе: "+n,0);toast("Вы выиграли: "+n)}}});
+if(S.au.filter(a=>!a.done&&!a.own).length<5){S.au.push(newAu());ch=true}
+if(S.au.length>40)S.au=S.au.filter(a=>!a.done||a.own||a.bids.some(b=>b.w=="me"));
+return ch}
+settle();save();
+function alist(){let l=S.au.filter(a=>AF=="all"?!a.done:(a.own||a.bids.some(b=>b.w=="me")));l.sort((a,b)=>a.done-b.done||a.end-b.end);
+return l.length?l.map(a=>{const it=I[a.i],r=it[3];return `<div class="rw" style="--rc:${R[r][1]}" onclick="A.aopen('${a.id}')"><span class="im">${art(a.i)}</span><div class="t"><b>${it[1]} ${it[0]}</b><span class="rt">${R[r][0]}</span>${a.own?' <span class="mu">· ваш лот</span>':""}<div class="pr">${fm(a.cur)}</div><div class="mu">${a.done?"Завершён":`<span data-e="${a.end}">${tl(a.end)}</span>`} · ставок: ${a.bids.length}${a.lead=="me"?" · <b style='color:var(--gr)'>вы лидер</b>":""}</div></div><button class="s">${a.own||a.done?"Открыть":"Ставка"}</button></div>`}).join(""):`<p class="mu" style="text-align:center;padding:30px 0">${AF=="all"?"Активных торгов нет.":"У вас пока нет ставок и лотов."}</p>`}
+function aucView(){return `<div class="ch"><button class="${AF=="all"?"on":""}" onclick="AF='all';render()">Активные</button><button class="${AF=="mine"?"on":""}" onclick="AF='mine';render()">Мои ставки и лоты</button></div><div id="lst">${alist()}</div>`}
+function ash(){const a=S.au.find(x=>x.id==AV);if(!a)return;const it=I[a.i],r=it[3],mb=minBid(a),me=a.lead=="me";
+$("#sh").innerHTML=`<div style="text-align:center"><span class="im" style="width:55%;margin:auto;display:block">${art(a.i)}</span><div class="rt" style="color:${R[r][1]}">${R[r][0]}</div><h2 style="margin:4px 0">${it[1]} ${it[0]}</h2></div>
+<div class="cd"><div class="row"><span class="mu">${a.bids.length?"Текущая ставка":"Стартовая цена"}</span><b style="font-size:20px">${fm(a.cur)}</b></div><div class="row" style="margin-top:6px"><span class="mu">Лидер</span><b>${a.lead?(me?"Вы":a.lead):"—"}</b></div><div class="row" style="margin-top:6px"><span class="mu">До конца</span><b ${a.done?"":`data-e="${a.end}"`}>${a.done?"завершён":tl(a.end)}</b></div><div class="row" style="margin-top:6px"><span class="mu">Игровая оценка</span><b>${fm(a.val)}</b></div></div>`
++(a.done||a.own?`<div class="mu" style="text-align:center">${a.done?"Торги завершены.":"Это ваш лот: ставки на него делать нельзя."}</div>`:`<input id="bi" type="number" inputmode="numeric" value="${mb}"><div class="ch"><button onclick="$('#bi').value=${mb}">Минимум</button><button onclick="$('#bi').value=${Math.round(mb*1.1/10)*10}">+10%</button><button onclick="$('#bi').value=${Math.round(mb*1.25/10)*10}">+25%</button></div><button class="b" onclick="A.bid()">Сделать ставку</button><p class="mu" style="text-align:center">Ставка резервируется и возвращается, если её перебьют. Ставка в последние 20 с продлевает торги.</p>`)
++`<h3>История ставок</h3>${a.bids.length?a.bids.slice(-6).reverse().map(b=>`<div class="row mu" style="padding:3px 0"><span>${b.w=="me"?"Вы":b.w}</span><b style="color:var(--tx)">${fm(b.p)}</b></div>`).join(""):'<div class="mu">Ставок пока нет.</div>'}`}
+function initA(){A.aopen=function(id){AV=id;ash();$("#ov").classList.add("on")};
+A.bid=function(){const a=S.au.find(x=>x.id==AV);if(!a||a.done||a.own)return;if(Date.now()>=a.end){settle();save();tp();return ash()}
+const amt=Math.round(+$("#bi").value),mb=minBid(a);if(!(amt>=mb))return toast("Минимум "+fm(mb));
+const need=amt-(a.lead=="me"?a.cur:0);if(S.bal<need)return toast("Не хватает ₽");
+S.bal-=need;a.cur=amt;a.lead="me";a.bids.push({w:"me",p:amt,t:Date.now()});if(a.end-Date.now()<2e4)a.end=Date.now()+2e4;
+log("Ставка: "+I[a.i][1]+" "+I[a.i][0],-need);save();tp();ash();toast("Ставка принята")};
+A.auForm=function(u){AV=null;const x=S.inv.find(y=>y.uid==u);if(!x)return;const it=I[x.i],sv=$("#sp")?+$("#sp").value:0;
+$("#sh").innerHTML=`<div style="text-align:center"><span class="im" style="width:50%;margin:auto;display:block">${art(x.i)}</span><h2 style="margin:4px 0">${it[1]} ${it[0]}</h2><div class="mu">Оценка ${fm(x.val)}</div></div><h3>Стартовая цена, ₽</h3><input id="sp" type="number" inputmode="numeric" value="${sv||Math.round(x.val*.7/10)*10}"><h3>Длительность</h3><div class="ch">${[5,15,60].map(d=>`<button class="${AD==d?"on":""}" onclick="AD=${d};A.auForm('${u}')">${d} мин</button>`).join("")}</div><button class="b" onclick="A.auGo('${u}')">Выставить лот</button><p class="mu" style="text-align:center">Победитель определяется по окончании. Комиссия 10% с итоговой цены. Без ставок предмет вернётся в гардероб.</p>`;$("#ov").classList.add("on")};
+A.auGo=function(u){const k=S.inv.findIndex(y=>y.uid==u);if(k<0)return toast("Предмет недоступен");const sp=Math.round(+$("#sp").value);if(!(sp>=100))return toast("Минимум 100 ₽");
+const x=S.inv.splice(k,1)[0],now=Date.now();S.au.push({id:rnd(),i:x.i,uid:x.uid,val:x.val,own:true,start:sp,cur:sp,lead:"",bids:[],end:now+AD*6e4,nb:now+(4+Math.random()*10)*1e3,mx:Math.round(x.val*(.8+Math.random()*.6)/10)*10,done:false});
+log("Выставлен на аукцион: "+I[x.i][1]+" "+I[x.i][0],0);save();closeOv();M.seg="a";AF="mine";tab="market";W.sel=null;render();toast("Лот выставлен")};
+}
+setInterval(()=>{const sg=S.inv.length+S.sold+S.bought,ch=settle();document.querySelectorAll("[data-e]").forEach(e=>e.textContent=tl(+e.dataset.e));
+if(ch){save();tp();if(tab=="market"&&M.seg=="a"&&$("#lst"))$("#lst").innerHTML=alist();else if((tab=="wardrobe"||tab=="more")&&sg!=S.inv.length+S.sold+S.bought)render();
+if(AV&&$("#ov").classList.contains("on")){const b=$("#bi"),v=b&&b.value;ash();if(v&&$("#bi"))$("#bi").value=v}}},1000);
+function card(x,extra){const it=I[x.i],r=it[3];return `<div class="ic ${r==5?"m5":""} ${extra&&extra.sel?"sel":""}" style="--rc:${R[r][1]}" onclick="${extra.click}"><span class="im">${art(x.i)}</span><b>${it[1]} ${it[0]}</b><small>${CT[it[2]]}</small><div class="row"><span class="rt">${R[r][0]}</span></div><div class="pr">${fm(x.val||x.p)}</div></div>`}
+function row(x,btn,d){const it=I[x.i],r=it[3];return `<div class="rw" style="--rc:${R[r][1]}"><span class="im" ${d?`onclick="A.tog('${x.uid}')"`:""}>${art(x.i)}</span><div class="t"><b>${it[1]} ${it[0]}</b><span class="rt">${R[r][0]}</span> <span class="mu">· ${CT[it[2]]}</span><div class="pr">${fm(x.val||x.p)}</div></div>${btn}</div>`}
+const IC={play:'<path d="M7 4l13 8-13 8z"/>',wardrobe:'<path d="M4 20V10l8-6 8 6v10zM9 20v-6h6v6"/>',market:'<path d="M4 9l2-5h12l2 5M4 9v11h16V9M4 9h16M9 14h6"/>',friends:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-4 3-6 6.500-6s6.500 2 6.500 6M17 4.500a3.500 3.500 0 010 7M21.500 20c0-3-1.500-5-4-5.800"/>',more:'<circle cx="5" cy="12" r="1.500"/><circle cx="12" cy="12" r="1.500"/><circle cx="19" cy="12" r="1.500"/>'};
+const NM={play:"Играть",wardrobe:"Гардероб",market:"Рынок",friends:"Друзья",more:"Ещё"};
+function pool(m=P.min,c=P.cat){return I.map((x,i)=>i).filter(i=>(c=="all"||I[i][2]==c)&&I[i][3]>=m)}
+function probs(m=P.min,c=P.cat){const p=pool(m,c),w={};if(!p.length)return [];p.forEach(i=>w[I[i][3]]=R[I[i][3]][2]);const s=Object.values(w).reduce((a,b)=>a+b,0);return Object.keys(w).map(r=>[+r,w[r]/s*100])}
+function outs(m,c){const p=pool(m,c);if(!p.length)return [];const rs=[...new Set(p.map(i=>I[i][3]))],t=rs.reduce((a,r)=>a+R[r][2],0),o=[];rs.forEach(r=>{const it=p.filter(i=>I[i][3]==r);it.forEach(i=>o.push([R[r][2]/t/it.length,I[i][4]*1.025*.9,I[i][4]]))});return o}
+function boxCost(m=P.min,c=P.cat){const o=outs(m,c);if(!o.length)return 0;const ev=o.reduce((a,[p,v])=>a+p*v,0),q=[...o].sort((a,b)=>a[1]-b[1]);let cu=0,q60=q[q.length-1][1];for(const [p,v] of q){cu+=p;if(cu>=.6){q60=v;break}}return Math.max(1000,Math.round(Math.min(Math.max(q60,ev/1.5),ev/1.1)/500)*500)}
+function winCh(m,c,cost){return outs(m,c).reduce((a,[p,v,b])=>a+p*Math.min(1,Math.max(0,(b*1.035-cost)/(b*.225))),0)*100}
+function roll(){const pr=probs();let x=Math.random()*100,r=pr[pr.length-1][0];for(const [k,p] of pr){if(x<p){r=k;break}x-=p}const c=pool().filter(i=>I[i][3]==r),i=c[Math.floor(Math.random()*c.length)];return {uid:rnd(),i,val:Math.round(I[i][4]*(.9+Math.random()*.25)/10)*10,t:Date.now()}}
+const A={
+go(t){tab=t;W.sel=null;render()},
+open(){if(P.busy)return;if(!pool().length)return toast("Нет таких предметов: смените категорию или ранг");const n=P.n,fr=P.min?0:Math.min(S.free,n),cost=(n-fr)*CO();if(S.bal<cost)return toast("Не хватает ₽");P.busy=true;$(".box").classList.add("go");
+setTimeout(()=>{S.bal-=cost;S.free-=fr;const rs=[];for(let k=0;k<n;k++)rs.push(roll());S.inv.push(...rs);S.opened+=n;S.t.o+=n;S.xp+=20*n;log("Открыто контейнеров: "+n,-cost);save();P.busy=false;P.last=rs;render();sheet(rs,cost)},1900)},
+sellMany(ids){let g=0,c=0;ids.forEach(u=>{const k=S.inv.findIndex(x=>x.uid==u);if(k<0)return;g+=Math.round(S.inv[k].val*.9);S.inv.splice(k,1);c++});if(!c)return toast("Нечего продавать");S.bal+=g;S.sold+=c;S.t.s+=c;S.xp+=5*c;log("Продано предметов: "+c,g);save();toast("+"+fm(g));return g},
+sell(u){A.sellMany([u]);closeOv();W.sel=null;render()},
+sellSel(){if(!W.sel||!W.sel.size)return toast("Выберите предметы");A.sellMany([...W.sel]);W.sel=null;render()},
+sellRes(){const ids=P.last.map(x=>x.uid);A.sellMany(ids);P.last=null;closeOv();render()},
+tog(u){if(!W.sel){return A.det(u)}W.sel.has(u)?W.sel.delete(u):W.sel.add(u);render()},
+selAll(){const l=wl();W.sel=W.sel&&W.sel.size==l.length?new Set():new Set(l.map(x=>x.uid));render()},
+selMode(){W.sel=W.sel?null:new Set();render()},
+det(u){AV=null;const x=S.inv.find(y=>y.uid==u);if(!x)return;const it=I[x.i],r=it[3];$("#sh").innerHTML=`<div class="pop" style="text-align:center"><span class="im" style="width:70%;margin:auto;display:block">${art(x.i)}</span><div class="rt" style="--rc:${R[r][1]};color:${R[r][1]}">${R[r][0]}</div><h2 style="margin:4px 0">${it[1]} ${it[0]}</h2><div class="mu">${CT[it[2]]} · ID ${x.uid.slice(0,6)}</div></div><div class="cd row"><span class="mu">Базовая стоимость</span><b>${fm(it[4])}</b></div><div class="cd row"><span class="mu">Игровая оценка</span><b>${fm(x.val)}</b></div><button class="b" onclick="A.sell('${u}')">Продать за ${fm(x.val*.9)}</button><button class="s" style="width:100%;margin-top:8px" onclick="A.auForm('${u}')">Выставить на аукцион</button><p class="mu" style="text-align:center">Комиссия системы 10%. Цены — игровая оценка.</p>`;$("#ov").classList.add("on")},
+buy(id){const k=S.mk.findIndex(x=>x.id==id);if(k<0)return toast("Лот уже продан");const l=S.mk[k];if(S.bal<l.p)return toast("Не хватает ₽");S.bal-=l.p;S.mk.splice(k,1);S.inv.push({uid:rnd(),i:l.i,val:l.p,t:Date.now()});S.bought++;S.t.b++;S.xp+=10;log("Покупка: "+I[l.i][1]+" "+I[l.i][0],-l.p);save();toast("Куплено!");render()},
+daily(){if(S.daily==today)return toast("Уже получено сегодня");S.daily=today;S.bal+=10000;log("Ежедневная награда",10000);save();toast("+10 000 ₽");render()},
+claim(k,r){const T={o:3,s:1,b:1};if(S.t[k]<T[k]||S.t.c[k])return;S.t.c[k]=1;S.bal+=r;S.xp+=30;log("Награда за задание",r);save();toast("+"+fm(r));render()},
+share(){if(!S.bot)return toast("Сначала впишите username бота");const u="https://t.me/share/url?url="+encodeURIComponent(link())+"&text="+encodeURIComponent("Заходи в STYLE MARKET!");try{if(tg&&tg.openTelegramLink)return tg.openTelegramLink(u);if(window.open(u,"_blank"))return}catch(e){}A.copy()},
+copy(){if(!S.bot)return toast("Сначала впишите username бота");const t=link(),ok=()=>toast("Ссылка скопирована"),fb=()=>{try{const a=document.createElement("textarea");a.value=t;a.style.cssText="position:fixed;opacity:0";document.body.appendChild(a);a.select();const r=document.execCommand("copy");a.remove();r?ok():toast(t)}catch(e){toast(t)}};try{navigator.clipboard.writeText(t).then(ok,fb)}catch(e){fb()}},
+bot(v){S.bot=v.replace(/[^\w]/g,"");save();const e=$("#lk");if(e)e.textContent=link()},
+reset(){AV=null;$("#sh").innerHTML=`<h2 style="margin:0 0 8px">Стереть прогресс?</h2><p class="mu">Баланс, гардероб и аукционы будут удалены без возможности восстановления.</p><button class="b" style="background:#ff3b5c;color:#fff" onclick="A.reset2()">Да, стереть</button><button class="s" style="width:100%;margin-top:8px" onclick="closeOv()">Отмена</button>`;$("#ov").classList.add("on")},
+reset2(){try{localStorage.removeItem(K)}catch(e){}location.reload()},
+set(){AV=null;$("#sh").innerHTML=`<h2 style="margin:0 0 10px">Настройки</h2><div class="cd row"><span class="mu">Игрок</span><b>${uid}</b></div><div class="cd row"><span class="mu">Режим</span><b>${tg&&tg.initData?"Telegram":"Браузер"}</b></div><div class="cd row"><span class="mu">Данные</span><b>на этом устройстве</b></div><button class="s" style="width:100%;margin-bottom:8px;background:#3a1620;color:#ff6b81" onclick="A.reset()">Сбросить прогресс</button><button class="b" onclick="closeOv()">Закрыть</button>`;$("#ov").classList.add("on")}};
+const link=()=>`https://t.me/${S.bot||"ВАШ_БОТ"}?startapp=ref_${uid}`;
+function closeOv(){AV=null;$("#ov").classList.remove("on")}
+$("#ov").onclick=e=>{if(e.target.id=="ov")closeOv()};
+function sheet(rs,cost){AV=null;const best=rs.reduce((a,b)=>b.val>a.val?b:a);$("#sh").innerHTML=`<h2 style="text-align:center;margin:0 0 4px">${rs.length>1?rs.length+" предметов":"Новый предмет"}</h2><p class="mu" style="text-align:center;margin:0 0 10px">Лучший: <b style="color:${R[I[best.i][3]][1]}">${R[I[best.i][3]][0]}</b> · ${fm(best.val)}</p>${cost?(()=>{const g=rs.reduce((a,x)=>a+Math.round(x.val*.9),0)-cost;return `<p style="text-align:center;margin:0 0 10px;font-weight:800;font-size:18px;color:${g>=0?"var(--gr)":"#ff6b81"}">${g>=0?"+":"−"}${fm(Math.abs(g))} <span class="mu" style="font-weight:400;font-size:13px">если продать всё</span></p>`})():""}`+rs.map((x,k)=>`<div style="animation-delay:${k*.25}s" class="pop">${row(x,"")}</div>`).join("")+`<button class="s" style="width:100%;margin:6px 0" onclick="A.sellRes()">Продать все за ${fm(rs.reduce((a,x)=>a+Math.round(x.val*.9),0))}</button><button class="b" onclick="closeOv()">Оставить в гардеробе</button>`;$("#ov").classList.add("on")}
+const V={
+play(){const pr=probs(),c=P.n-(P.min?0:Math.min(S.free,P.n)),cost=c*CO();const l=P.last&&[...P.last].reverse().find(x=>S.inv.some(y=>y.uid==x.uid));
+return `<div class="ban"><div><b>Ежедневная награда</b><div class="mu">+10 000 ₽ каждый день</div></div><button class="s" onclick="A.daily()" ${S.daily==today?"disabled":""}>${S.daily==today?"Получено":"Забрать"}</button></div>
+<div class="cd"><div class="row"><b>Контейнер STYLE</b><span class="mu">${P.min?"Цена зависит от ранга":"Бесплатно: "+S.free}</span></div><div class="box" style="--bc:${P.min?R[P.min][1]:"#f5b301"}"><div class="cr"><u class="rays"></u><u class="bd"></u><u class="gl"></u><u class="lid"></u></div></div>
+<div class="ch"><button class="${P.cat=="all"?"on":""}" onclick="P.cat='all';render()">Все</button>${Object.keys(CT).map(k=>`<button class="${P.cat==k?"on":""}" onclick="P.cat='${k}';render()">${CT[k]}</button>`).join("")}</div>
+<div class="ch"><button class="${P.min==0?"on":""}" onclick="P.min=0;render()">Любая редкость <small>${fk(boxCost(0))}</small></button>${R.slice(1).map((r,k)=>`<button class="${P.min==k+1?"on":""}" style="${P.min==k+1?"":"color:"+r[1]}" onclick="P.min=${k+1};render()">${r[0]}+ <small>${fk(boxCost(k+1))}</small></button>`).join("")}</div>
+<div class="ch">${[1,5,10].map(n=>`<button class="${P.n==n?"on":""}" onclick="P.n=${n};render()">×${n}</button>`).join("")}</div>
+${pr.length?"":'<p style="color:#ff6b81;margin:4px 0 10px">В этой комбинации нет предметов. Смените категорию или ранг.</p>'}${pr.length?`<p class="mu" style="margin:0 0 6px">Шанс в плюс за коробку: <b style="color:var(--gr)">${winCh(P.min,P.cat,CO()).toFixed(0)}%</b> · цена ${fm(CO())}</p>`:""}<details class="mu" style="margin:4px 0 10px"><summary>Вероятности выпадения</summary>${pr.map(([r,p])=>`<div class="row" style="padding:3px 0"><span style="color:${R[r][1]}">${R[r][0]}</span><b>${p.toFixed(1)}%</b></div>`).join("")}</details>
+<button class="b" onclick="A.open()" ${S.bal<cost||!pr.length?"disabled":""}>Открыть ×${P.n} ${cost?`<span style="opacity:.7;font-size:13px"> ${fm(cost)}</span>`:"· бесплатно"}</button></div>
+${l?`<h3>Последняя находка</h3>${row(l,`<button class="s" onclick="A.sell('${l.uid}')">Продать</button>`)}`:""}`},
+wardrobe(){return `<div class="cd"><div class="mu">Стоимость коллекции · ${S.inv.length} шт.</div><div style="font-size:26px;font-weight:800">${fm(val())}</div></div>
+<input placeholder="Поиск: название или бренд" value="${W.q}" oninput="W.q=this.value;$('#lst').innerHTML=wlist()">
+<div class="ch">${[["p","Цена ↓"],["pa","Цена ↑"],["r","Редкость"],["n","Новые"],["a","А–Я"]].map(([k,t])=>`<button class="${W.sort==k?"on":""}" onclick="W.sort='${k}';render()">${t}</button>`).join("")}<button onclick="W.v=W.v=='g'?'l':'g';render()">${W.v=="g"?"Список":"Сетка"}</button><button class="${W.sel?"on":""}" onclick="A.selMode()">Выбор</button></div>
+${W.sel?`<div class="row" style="margin-bottom:8px"><button class="s" onclick="A.selAll()">Выбрать все</button><button class="s" style="background:#f5b301;color:#000" onclick="A.sellSel()">Продать выбранные (${W.sel.size})</button></div>`:""}<div id="lst">${wlist()}</div>`},
+market(){return `<div class="ch">${[["v","Витрина"],["a","Аукцион"],["d","Мои сделки"]].map(([k,t])=>`<button class="${M.seg==k?"on":""}" onclick="M.seg='${k}';render()">${t}</button>`).join("")}</div>`+(M.seg=="a"?aucView():M.seg=="d"?(S.h.length?S.h.map(h=>`<div class="cd row"><div>${h.m}<div class="mu">${new Date(h.t).toLocaleString("ru-RU")}</div></div><b style="color:${h.d<0?"#ff6b81":"var(--gr)"}">${h.d>0?"+":""}${fm(h.d)}</b></div>`).join(""):'<p class="mu">Пока нет операций.</p>'):
+`<input placeholder="Поиск по названию или бренду" value="${M.q}" oninput="M.q=this.value;$('#lst').innerHTML=mlist()"><div class="ch"><button class="${M.cat=="all"?"on":""}" onclick="M.cat='all';render()">Все</button>${Object.keys(CT).map(k=>`<button class="${M.cat==k?"on":""}" onclick="M.cat='${k}';render()">${CT[k]}</button>`).join("")}</div><div class="ch">${[["n","Новые"],["pa","Дешевле"],["p","Дороже"],["r","Редкость"]].map(([k,t])=>`<button class="${M.sort==k?"on":""}" onclick="M.sort='${k}';render()">${t}</button>`).join("")}<button onclick="mkList();render()">Обновить</button></div><div id="lst">${mlist()}</div>`)},
+friends(){return `<div class="cd" style="text-align:center"><h2 style="margin:0 0 6px">Зови друзей</h2><p class="mu">Отправь ссылку — друг откроет STYLE MARKET в Telegram.</p><input placeholder="Username вашего бота (без @)" value="${S.bot}" oninput="A.bot(this.value)"><div id="lk" class="mu" style="word-break:break-all;margin-bottom:10px">${link()}</div><button class="b" onclick="A.share()">Пригласить друга</button><button class="s" style="width:100%;margin-top:8px" onclick="A.copy()">Скопировать ссылку</button></div>
+<div class="cd"><div class="row"><b>Приглашено</b><b>0</b></div><p class="mu">Награды за друзей и список приглашённых заработают после подключения сервера: только он может честно проверить, кто пришёл по ссылке.</p></div>`},
+more(){const T=[["o","Открыть 3 контейнера",3,5000],["s","Продать 1 предмет",1,3000],["b","Купить 1 предмет на рынке",1,3000]];
+return `<div class="cd"><div class="row"><b>Профиль · ур. ${lv()}</b><span class="mu">ID ${uid}</span></div><div class="gr" style="margin-top:10px;gap:8px">${[["Открыто",S.opened],["Продано",S.sold],["Куплено",S.bought],["Предметов",S.inv.length]].map(([a,b])=>`<div class="cd" style="margin:0;background:var(--c2)"><div class="mu">${a}</div><b style="font-size:20px">${b}</b></div>`).join("")}</div></div>
+<h3>Задания на сегодня</h3>${T.map(([k,n,g,r])=>`<div class="cd"><div class="row"><b>${n}</b><button class="s" onclick="A.claim('${k}',${r})" ${S.t[k]<g||S.t.c[k]?"disabled":""}>${S.t.c[k]?"Готово":"+"+fm(r)}</button></div><div class="pb" style="margin-top:8px"><b style="width:${Math.min(100,S.t[k]/g*100)}%"></b></div><div class="mu">${Math.min(S.t[k],g)} / ${g}</div></div>`).join("")}
+<h3>Ежедневная награда</h3><div class="cd row"><span>+10 000 ₽</span><button class="s" onclick="A.daily()" ${S.daily==today?"disabled":""}>${S.daily==today?"Получено":"Забрать"}</button></div>
+<h3>Скоро (нужен сервер)</h3><div class="cd mu">Рейтинг, кланы, сезонный пропуск, аукционы, реальные сделки между игроками.</div>
+<h3>Настройки</h3><button class="s" style="width:100%" onclick="A.reset()">Сбросить прогресс</button>`}};
+function wl(){const q=W.q.toLowerCase();let l=S.inv.filter(x=>(I[x.i][1]+" "+I[x.i][0]).toLowerCase().includes(q));const f={p:(a,b)=>b.val-a.val,pa:(a,b)=>a.val-b.val,r:(a,b)=>I[b.i][3]-I[a.i][3]||b.val-a.val,n:(a,b)=>b.t-a.t,a:(a,b)=>I[a.i][0].localeCompare(I[b.i][0])};return l.sort(f[W.sort])}
+function wlist(){const l=wl();if(!l.length)return `<p class="mu" style="text-align:center;padding:30px 0">Гардероб пуст. Откройте контейнер на вкладке «Играть».</p>`;
+const ex=x=>({sel:W.sel&&W.sel.has(x.uid),click:`A.tog('${x.uid}')`});return W.v=="g"?`<div class="gr">${l.map(x=>card(x,ex(x))).join("")}</div>`:l.map(x=>row(x,W.sel?`<button class="s" onclick="A.tog('${x.uid}')">${W.sel.has(x.uid)?"✓":"○"}</button>`:`<button class="s" onclick="A.sell('${x.uid}')">Продать</button>`,1)).join("")}
+function mlist(){const q=M.q.toLowerCase();let l=S.mk.filter(x=>(M.cat=="all"||I[x.i][2]==M.cat)&&(I[x.i][1]+" "+I[x.i][0]).toLowerCase().includes(q));const f={n:(a,b)=>a.n-b.n,pa:(a,b)=>a.p-b.p,p:(a,b)=>b.p-a.p,r:(a,b)=>I[b.i][3]-I[a.i][3]};l.sort(f[M.sort]);return l.length?l.map(x=>row(x,`<button class="s" style="background:var(--gr);color:#04140a" onclick="A.buy('${x.id}')">Купить</button>`)).join(""):`<p class="mu" style="text-align:center;padding:30px 0">Ничего не найдено.</p>`}
+function render(){if(P.busy&&tab=="play"&&$(".box.go"))return;const el=$("#m");const sc=el.scrollTop;$("#top").innerHTML=`<div class="av">${lv()}</div><div class="xp"><b>Ур. ${lv()}</b><i><b style="width:${S.xp%200/2}%"></b></i></div><div class="bal"><small>Баланс</small>${fm(S.bal)}</div><button class="s" aria-label="Настройки" onclick="A.set()" style="padding:9px 11px">⚙</button>`;el.innerHTML=V[tab]();el.scrollTop=sc;$("#nv").innerHTML=Object.keys(NM).map(k=>`<button class="${tab==k?"on":""}" onclick="A.go('${k}')"><svg viewBox="0 0 24 24">${IC[k]}</svg>${NM[k]}</button>`).join("")}
+initA();render();
+</script><script src="patch.js"></script></body></html>
